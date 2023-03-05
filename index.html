@@ -5,10 +5,22 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>News API</title>
+        <link rel="stylesheet" href="styles/style.css">
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
-
+        <header class="mx-4">
+            <div class="container text-center mt-10 mx-auto">
+                <h3 class="text-3xl">News API</h3>
+                <h1 class="text-5xl leading-[50px] font-semibold mt-2">World News is available here!</h1>
+                <p id="total-result" class="text-lg mt-2"></p>
+            </div>
+        </header>
+        <main class="mx-4">
+            <section class="container mt-10 mx-auto">
+                <div id="news-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"></div>
+            </section>
+        </main>
         <script src="js/news.js"></script>
     </body>
 </html>
